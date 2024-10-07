@@ -127,15 +127,42 @@ def decrypt(ciphertext, key):
 ##### 第1关：基本测试：根据S-DES算法编写和调试程序，提供GUI解密支持用户交互。输入可以是8bit的数据和10bit的密钥，输出是8bit的密文。
 [![image](https://imgur.la/images/2024/10/07/image024da1b83d562ee1.md.png)](https://imgur.la/image/image.faCiF)
 [![image](https://imgur.la/images/2024/10/07/image91e5dff336234c14.md.png)](https://imgur.la/image/image.faP5K)
+
+
+
 经测试，该程序能够快速实现二进制模式下的加解密。
 
 
 
 
 ##### 第2关：交叉测试: 检测算法和程序是否可以在异构的系统或平台上都可以正常运行。
-[![image](https://imgur.la/images/2024/10/07/image5c21d920798f6e70.md.png)](https://imgur.la/image/image.faJ9z)
-[![image](https://imgur.la/images/2024/10/07/imagebecf01fb0c73521e.md.png)](https://imgur.la/image/image.fa9mS)
-经测试，该程序能够在组内的多台电脑上正常运行，通过交叉检测。
+
+
+设有A和B两组位同学(选择相同的密钥K)；则A、B组同学编写的程序对明文P进行加密得到相同的密文C；或者B组同学接收到A组程序加密的密文C，使用B组程序进行解密可得到与A相同的P。
+
+
+我们与其他组进行了交叉测试：
+
+
+二进制加密选择相同的明文P为：01110100  选择相同的密钥K为：1011011001
+
+
+
+二进制解密选择相同的密文P为：10000110  选择相同的密钥K为：1011011001
+
+
+
+
+[![image](https://imgur.la/images/2024/10/07/image9117bc41222c38f4.md.png)](https://imgur.la/image/image.fDZ9b)
+[![image](https://imgur.la/images/2024/10/07/imagee518d347c881bcbc.md.png)](https://imgur.la/image/image.fDeNN)
+[![image](https://imgur.la/images/2024/10/07/image1bef2e6172e92b2c.md.png)](https://imgur.la/image/image.fDRnQ)
+
+
+
+经检测，我们组结果与另外一组结果相同，通过交叉检测。
+
+
+
 
 
 
@@ -143,6 +170,7 @@ def decrypt(ciphertext, key):
 ##### 第3关：扩展功能考虑到向实用性扩展，加密算法的数据输入可以是ASII编码字符串(分组为1 Byte)，对应地输出也可以是ACII字符串(很可能是乱码)。
 [![image](https://imgur.la/images/2024/10/07/imagee242818ec3eb4275.md.png)](https://imgur.la/image/image.fajnU)
 [![image](https://imgur.la/images/2024/10/07/image1c259a7497412633.md.png)](https://imgur.la/image/image.faU5L)
+
 
 经测试，该程序能够完成功能扩展，实现ASCII编码的加解密。
 
