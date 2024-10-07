@@ -124,7 +124,7 @@ def decrypt(ciphertext, key):
 [![image](https://imgur.la/images/2024/10/07/image876603ebba6b52c9.md.png)](https://imgur.la/image/image.faz47)
 
 ## 六、项目测试
-##### 第1关：基本测试：根据S-DES算法编写和调试程序，提供GUI解密支持用户交互。输入可以是8bit的数据和10bit的密钥，输出是8bit的密文。
+#### 第1关：基本测试：根据S-DES算法编写和调试程序，提供GUI解密支持用户交互。输入可以是8bit的数据和10bit的密钥，输出是8bit的密文。
 [![image](https://imgur.la/images/2024/10/07/image024da1b83d562ee1.md.png)](https://imgur.la/image/image.faCiF)
 [![image](https://imgur.la/images/2024/10/07/image91e5dff336234c14.md.png)](https://imgur.la/image/image.faP5K)
 
@@ -135,7 +135,7 @@ def decrypt(ciphertext, key):
 
 
 
-##### 第2关：交叉测试: 检测算法和程序是否可以在异构的系统或平台上都可以正常运行。
+#### 第2关：交叉测试: 检测算法和程序是否可以在异构的系统或平台上都可以正常运行。
 
 
 设有A和B两组位同学(选择相同的密钥K)；则A、B组同学编写的程序对明文P进行加密得到相同的密文C；或者B组同学接收到A组程序加密的密文C，使用B组程序进行解密可得到与A相同的P。
@@ -167,7 +167,7 @@ def decrypt(ciphertext, key):
 
 
 
-##### 第3关：扩展功能考虑到向实用性扩展，加密算法的数据输入可以是ASII编码字符串(分组为1 Byte)，对应地输出也可以是ACII字符串(很可能是乱码)。
+#### 第3关：扩展功能考虑到向实用性扩展，加密算法的数据输入可以是ASII编码字符串(分组为1 Byte)，对应地输出也可以是ACII字符串(很可能是乱码)。
 [![image](https://imgur.la/images/2024/10/07/imagee242818ec3eb4275.md.png)](https://imgur.la/image/image.fajnU)
 [![image](https://imgur.la/images/2024/10/07/image1c259a7497412633.md.png)](https://imgur.la/image/image.faU5L)
 
@@ -177,18 +177,18 @@ def decrypt(ciphertext, key):
 
 
 
-##### 第4关：暴力破解：检测是否能够实现暴力破解，且设置时间戳，记录暴力破解时间。
-[![image](https://imgur.la/images/2024/10/07/image9f06cce0d4fe496b.md.png)](https://imgur.la/image/image.fawiG)
+#### 第4关：暴力破解：检测是否能够实现暴力破解，且设置时间戳，记录暴力破解时间。
+[![image](https://imgur.la/images/2024/10/07/imagec65e4bae8c2750af.md.png)](https://imgur.la/image/image.fDzKa)
 
 
 经测试，该程序能够实现暴力破解
 
-##### 第5关：封闭测试：分析是否存在多个密钥可以生成相同的密文
-[![image](https://imgur.la/images/2024/10/07/imaged6e21b1453716edb.md.png)](https://imgur.la/image/image.fa5Aw)
+#### 第5关：封闭测试：分析是否存在多个密钥可以生成相同的密文
+[![image](https://imgur.la/images/2024/10/07/imaged0e8a5f4ef8946fe.md.png)](https://imgur.la/image/image.fDCip)
+[![image](https://imgur.la/images/2024/10/07/image5b2694d5b886f35f.md.png)](https://imgur.la/image/image.fD4A3)
 
 
-
-经测试.该程序能够分析是否存在多个密钥可以生成相同的密文
+经测试，该程序能够在较短时间内分析是否存在多个密钥可以生成相同的密文。
 
 ## 七、总结
 本项目成功实现了S-DES加密算法，并提供了一个用户友好的图形用户界面（GUI），使得加密和解密过程更加直观和便捷。通过详细的算法描述和关键代码实现，项目满足了课程的基本要求，还通过多模式加解密、跨平台一致性测试、扩展功能实现、暴力破解和封闭测试等相关测试。
